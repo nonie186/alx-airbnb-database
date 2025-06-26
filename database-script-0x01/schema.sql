@@ -80,7 +80,4 @@ CREATE TABLE messages (
   FOREIGN KEY (recipient_id) REFERENCES users(user_id)
 );
 
-Below is the visual representation of our AirBnB database schema:
-
-![3NF Diagram](./3NF.png)
 
