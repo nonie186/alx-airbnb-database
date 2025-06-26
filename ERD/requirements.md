@@ -1,3 +1,3 @@
 #ERD Diagram
 
-![ER Diagram](./erd-diagram.png)
+![ER Diagram](./ERD_Diagram.png)
