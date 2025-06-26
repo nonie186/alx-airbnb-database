@@ -82,5 +82,5 @@ CREATE TABLE messages (
 
 Below is the visual representation of our AirBnB database schema:
 
-![database-script-0x01](./database-script-0x01/3NF.png)
+![3NF Diagram](./3NF.png)
 
