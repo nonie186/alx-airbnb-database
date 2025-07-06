@@ -8,19 +8,19 @@ Step 1: Identify High-Usage Columns
 | `Review`   | `property_id` | Aggregations, joins        |
 
 Step 2: SQL to Create Indexes
--- 🔍 Index on User email (frequently searched during login)
+-- Index on User email (frequently searched during login)
 CREATE INDEX idx_user_email ON User(email);
 
--- 🧾 Index on Booking.user_id (frequent joins and filters)
+-- Index on Booking.user_id (frequent joins and filters)
 CREATE INDEX idx_booking_user_id ON Booking(user_id);
 
--- 🏠 Index on Booking.property_id (join with Property)
+-- Index on Booking.property_id (join with Property)
 CREATE INDEX idx_booking_property_id ON Booking(property_id);
 
--- 🗺️ Index on Property.location (used in search filters)
+--  Index on Property.location (used in search filters)
 CREATE INDEX idx_property_location ON Property(location);
 
--- ⭐ Index on Review.property_id (used in ratings aggregation)
+-- Index on Review.property_id (used in ratings aggregation)
 CREATE INDEX idx_review_property_id ON Review(property_id);
 
 Step 3: Measure Performance with EXPLAIN or ANALYZE
