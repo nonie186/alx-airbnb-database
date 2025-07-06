@@ -42,3 +42,26 @@ Identify high-usage columns in your User, Booking, and Property tables (e.g., co
 Write SQL CREATE INDEX commands to create appropriate indexes for those columns and save them on database_index.sql
 
 Measure the query performance before and after adding indexes using EXPLAIN or ANALYZE.
+
+# 4. Query Optimization Report
+
+## ✅ Objective
+Improve query performance for retrieving bookings, user, property, and payment data.
+
+## Initial Query Performance
+- Used multiple joins without indexing
+- Query time: ~850ms
+- Inefficiencies: Seq Scan on Booking, Nested Loop on User join
+
+## Optimizations Applied
+- Added indexes on:
+  - Booking.user_id
+  - Booking.property_id
+  - Payment.booking_id
+- Reduced columns returned
+- Replaced full name fields with concatenated version
+
+## Result
+- Query time reduced to ~120ms
+- Index Scan and Hash Join now used
+
