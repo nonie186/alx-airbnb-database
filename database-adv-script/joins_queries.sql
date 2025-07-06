@@ -1,4 +1,4 @@
-# 1. INNER JOIN: Bookings with the Users Who Made Them
+1. INNER JOIN: Bookings with the Users Who Made Them
 SELECT 
     b.booking_id,
     b.property_id,
@@ -15,7 +15,7 @@ FROM
 INNER JOIN 
     User u ON b.user_id = u.user_id;
 
-# 2. LEFT JOIN: Properties with Their Reviews (Even if No Reviews)
+2. LEFT JOIN: Properties with Their Reviews (Even if No Reviews)
 SELECT 
     p.property_id,
     p.name AS property_name,
@@ -29,8 +29,8 @@ FROM
 LEFT JOIN 
     Review r ON p.property_id = r.property_id;
 
-# 3. FULL OUTER JOIN: Users and Bookings (All Users and All Bookings, Matched or Not)
->SELECT 
+3. FULL OUTER JOIN: Users and Bookings (All Users and All Bookings, Matched or Not)
+SELECT 
     u.user_id,
     u.first_name,
     u.email,
