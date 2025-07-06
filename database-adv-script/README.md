@@ -1,4 +1,4 @@
-# Write Complex Queries with Joins
+# 1. Write Complex Queries with Joins
 
 ## Objective: Master SQL joins by writing complex queries using different types of joins.
 
@@ -11,7 +11,7 @@ Write a query using aLEFT JOIN to retrieve all properties and their reviews, inc
 Write a query using a FULL OUTER JOIN to retrieve all users and all bookings, even if the user has no booking or a booking is not linked to a user.
 
 
-# Practice Subqueries
+# 2. Practice Subqueries
 
 ## Objective: Write both correlated and non-correlated subqueries.
 
@@ -30,3 +30,15 @@ Objective: Use SQL aggregation and window functions to analyze data.
 ## Write a query to find the total number of bookings made by each user, using the COUNT function and GROUP BY clause.
 
 Use a window function (ROW_NUMBER, RANK) to rank properties based on the total number of bookings they have received.
+
+# 3. Implement Indexes for Optimization
+
+## Objective: Identify and create indexes to improve query performance.
+
+## Instructions:
+
+Identify high-usage columns in your User, Booking, and Property tables (e.g., columns used in WHERE, JOIN, ORDER BY clauses).
+
+Write SQL CREATE INDEX commands to create appropriate indexes for those columns and save them on database_index.sql
+
+Measure the query performance before and after adding indexes using EXPLAIN or ANALYZE.
