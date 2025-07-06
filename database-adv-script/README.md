@@ -76,3 +76,15 @@ Assume the Booking table is large and query performance is slow. Implement parti
 Test the performance of queries on the partitioned table (e.g., fetching bookings by date range).
 
 Write a brief report on the improvements you observed.
+
+# 6. Monitor and Refine Database Performance
+mandatory
+Objective: Continuously monitor and refine database performance by analyzing query execution plans and making schema adjustments.
+
+## Instructions:
+
+Use SQL commands like SHOW PROFILE or EXPLAIN ANALYZE to monitor the performance of a few of your frequently used queries.
+
+Identify any bottlenecks and suggest changes (e.g., new indexes, schema adjustments).
+
+Implement the changes and report the improvements.
