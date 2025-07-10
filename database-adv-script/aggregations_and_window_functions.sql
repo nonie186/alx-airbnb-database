@@ -14,7 +14,7 @@ GROUP BY
     b.user_id, u.first_name, u.last_name;
 ```
 
-> 🎯 This query returns each user and how many bookings they’ve made.
+> This query returns each user and how many bookings they’ve made.
 
 
 ## 2. **Rank Properties by Total Bookings (Using RANK)**
